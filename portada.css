@@ -1,3 +1,6 @@
+/*div{
+	border: 1px solid black;
+}*/
 #principal{
 	width: 100%;
 	height: auto;
@@ -46,9 +49,10 @@
 #contenedorNoticias{
 	display: flex;
 	flex-direction: row;
+	margin-bottom: 30px;
 }
 #contenedorMenu{
-	width: 30%;
+	width: 25%;
 	height: 300px;
 }
 #menu{
@@ -70,9 +74,15 @@
 	background-color:rgb(226, 225, 222);
 }
 #noticias{
-	width: 70%;
+	
+	width: 75%;
 	height: 300px;
 	
+}
+#noticias img{
+	margin-right: 3%;
+	width: 85%;
+	height: 100%;
 }
 #contenido{
 	display: flex;

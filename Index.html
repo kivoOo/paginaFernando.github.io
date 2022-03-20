@@ -6,13 +6,51 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="portada.css">
     <title> IES Fernando III</title>
+    <script language="JavaScript1.1">// <![CDATA[
+        var specifyimage=new Array() //Imágenes
+        specifyimage[0]="imágenes/noticia2.png"
+        specifyimage[1]="imágenes/noticia3.png"
+        specifyimage[2]="imágenes/noticia4.png"
+        specifyimage[3]="imágenes/noticia5.png"
+        specifyimage[4]="imágenes/noticia6.png"
+        specifyimage[5]="imágenes/noticia7.png"
+        specifyimage[6]="imágenes/noticia8.png"
+        specifyimage[7]="imágenes/noticia9.png"
+        specifyimage[8]="imágenes/noticia10.png"
+        specifyimage[9]="imágenes/noticia11.png"
+        specifyimage[10]="imágenes/noticia12.png"
+        specifyimage[11]="imágenes/noticia13.png"
+        specifyimage[12]="imágenes/noticia1.png"
+        var delay=3000 //En milisegundos,1000=1segundo
+        var count =1;
+        
+        var cubeimage=new Array()
+        for (i=0;i<specifyimage.length;i++){
+        cubeimage[i]=new Image()
+        cubeimage[i].src=specifyimage[i]
+        }
+        
+        function movecube(){
+        if (window.createPopup)
+        cube.filters[0].apply()
+        document.images.cube.src=cubeimage[count].src;
+        if (window.createPopup)
+        cube.filters[0].play()
+        count++;
+        if (count==cubeimage.length)
+        count=0;
+        setTimeout("movecube()",delay)
+        }
+        
+        window.onload=new Function("setTimeout('movecube()',delay)")
+        // ]]></script>
     
 </head>
 <body>
     <div id="principal">           <!--CONTENEDOR PRINCIPAL-->
         <div id="cabecera">       <!--CABEZERA-->
             <div id="cabeceraI">   
-               <img src="imágenes/logoFernado.png" alt="">
+               <a href="Index.html"><img src="imágenes/logoFernado.png" alt=""></a>
             </div>
             <div id="cabeceraD">
                 <div id="cabeceraD1">
@@ -45,7 +83,7 @@
                 </div>
             </div>
             <div id="noticias">   <!--NOTICIAS-->
-
+                <img src="imágenes/noticia1.png" name="cube" alt="">
             </div>
         </div>
                     <!--PARTE DE NATALIA-->
