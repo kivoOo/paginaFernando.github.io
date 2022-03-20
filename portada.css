@@ -1,50 +1,51 @@
 #principal{
-	border: 1px solid black;
 	width: 100%;
 	height: auto;
 }
 #cabecera{
+	
 	display: flex;
+	flex-direction: row;
 	width: 100%;
 	height: 180px;
 
 }
 #cabeceraI{
-	background-image: url("imágenes/logoFernado.png");
-	background-size: 80%;
-	background-repeat: no-repeat;
 	width: 49%;
 	height: 180px;
 }
+#cabeceraI img{
+	width: 85%;
+	height: 150px;
+}
 #cabeceraD{
 	display: flex;
+	flex-direction: column;
 	width: 49%;
 	height: 180px;
 }
 #cabeceraD1{
 	width: 100%;
-	height: 70%;
-	background-image: url("imágenes/castillo.png");
-	background-size: 80%;
-	background-repeat: no-repeat;
-
-
+	height: 60%;
+}
+#cabeceraD1 img{
+	float: right;
+	width: 30%;
+	height: 80%;
 }
 #cabeceraD2{
 	width: 100%;
 	height: 30%;
 }
-#twitter{
-	background-image: url("imágenes/tiwtter.png");
-	background-size: 80%;
+#cabeceraD2 img{
+	float: right;
+	margin-right: 3px;
+	width: 30px;
+	height: 30px;
 }
-#instagram{
-	background-image: url("imágenes/instagram.png");
-	background-size: 80%;
-}
-#facebook{
-	background-image: url("imágenes/facebook.png");
-	background-size: 80%;
+#contenedorNoticias{
+	display: flex;
+	flex-direction: row;
 }
 #contenedorMenu{
 	width: 30%;
@@ -52,7 +53,21 @@
 }
 #menu{
     list-style: none;
-
+}
+#menu li{
+	width: 60%;
+	margin-bottom: 2px;
+	text-align: center;
+	color: blue;
+	
+}
+#menu a{
+	text-decoration: none;
+}
+#menu li:hover{
+	border-radius: 5px;
+	color: black;
+	background-color:rgb(226, 225, 222);
 }
 #noticias{
 	width: 70%;
