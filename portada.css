@@ -94,7 +94,7 @@
 	grid-gap: 5px;
 	justify-content: center;
 }
-#grid1{width: 25%; height: 25%; margin-left: 5%;}
+#grid1{width: 25%; height: 25%; margin-left: 10%;}
 #grid2{width: 25%; height: 25%;}
 #grid3{width: 25%; height: 25%;}
 #grid4{width: 25%; height: 25%;}
@@ -160,7 +160,7 @@
 .año:hover{cursor: text;}
 .texto{margin-left: 20px; font-size: 18px;}
 .contacto{color: grey; font-size: 18px;}
-#codigo{margin-left: 25%; margin-top: 19px; width: 50%; height: 75%;}
+#codigo{margin-left: 25%; margin-top: 19px; width: 40%; height: 75%;}
 #junta{width: 35%; height: 60%; float: left; margin-top: 65px;}
 #texto_junta{float: left; font-family: Arial, Helvetica, sans-serif; font-size: 16px; margin-top: 103px; line-height: 5px;}
 .juntaAd{font-size: 20px;}
@@ -168,9 +168,17 @@
 #bandera_europa{float: left; margin-top: 5px; margin-left: 5px; width: 140px; height: 90px;}
 .uEuropea{font-family: Arial, Helvetica, sans-serif; font-size: 21px; margin-top: 3px; margin-right: 10px;}
 #comentarios{line-height: 5px; font-size: 16px; margin-top: 10px; float: right; margin-right: 9px}
-#marco{box-shadow: 2px 5px 5px 2px grey; border: 2px solid grey; width: 96%; margin-left: 7px; height: 53%; margin-top: 80px;}
+#marco{
+	box-shadow: 2px 5px 5px 2px grey; 
+	border: 2px solid grey; 
+	width: 96%; 
+	margin-left: 7px; 
+	height: 53%; 
+	margin-top: 70px;
+}
 #redesSociales{margin-left: 30px; margin-top: 80px;}
 .facebook, .twitter, .instagram{width: 30px; height: 30px;}
+.facebook:hover, .twitter:hover, .instagram:hover{cursor: pointer;}
 #fila1, #fila2, #fila3, #fila4, #fila5, #fila6, #fila7, #fila8, #fila9, #fila10, #fila11, #fila12{
 	display: block; 
 	width: 100%; 
@@ -180,3 +188,4 @@
 	margin-bottom: 200px;
 }
 .imagenes{width: 350%; height: auto;}
+#texto_imagenes{color: blue; font-family: Arial, Helvetica, sans-serif; font-size: 13px; font-weight: bold; width: 350%;}
