@@ -211,3 +211,45 @@ ul li ul li a {
 }
 .imagenes{width: 350%; height: auto;}
 #texto_imagenes{color: blue; font-family: Arial, Helvetica, sans-serif; font-size: 13px; font-weight: bold; width: 350%;}
+
+#daw1{
+	width:100% ;
+	height: auto;
+}
+#daw1 img{
+	width: 70%;
+	height: 60%;
+	margin-left: 16%;
+}
+#daw2{
+	width: 100%;
+	height: auto;
+	margin-bottom: 100px;
+}
+#daw2 img{
+	float: left;
+	width: 50%;
+	height: auto;
+	margin-bottom: 100px;
+	
+}
+#daw3{
+	width: 100%;
+	height: auto;
+	margin-bottom: 100px;
+}
+#daw3 img{
+	width: 49%;
+	height: 100%;
+}
+
+#textDaw1{
+	text-align: center;
+	margin-bottom: 100px;
+}
+#textDaw1 h2{
+	color:rgb(172, 71, 46)
+}
+#textDaw1 strong{
+	color: red;
+}
