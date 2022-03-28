@@ -4,9 +4,9 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="CSS/portada.css">
-    <link rel="stylesheet" href="divPaginaFernando.css">
-    <title> IES Fernando III</title>
+    <link rel="stylesheet" href="CSS/dam.css">
+    <title>C.F.G.S. Desarrollo de Aplicaciones Multiplataforma</title>
+
     <script language="JavaScript1.1">// <![CDATA[
         var specifyimage=new Array() //Imágenes
         specifyimage[0]="imágenes/noticia2.png"
@@ -42,10 +42,38 @@
         count=0;
         setTimeout("movecube()",delay)
         }
-        
-        window.onload=new Function("setTimeout('movecube()',delay)")
-        // ]]></script>
+
+        //SCRIPT DAM
+        var contador = 0;
+        function cambiaImagenes(){
+            contador++;
+            switch(contador%5+1){
+                case 1:
+                    document.getElementById("imagenesContenido").src="Imágenes/Imagen_DAM1.PNG";
+                    break;
+                case 2:
+                    document.getElementById("imagenesContenido").src="Imágenes/Imagen_DAM2.PNG";
+                    break;
+                case 3:
+                    document.getElementById("imagenesContenido").src="Imágenes/Imagen_DAM3.PNG";
+                    break;
+                case 4: 
+                    document.getElementById("imagenesContenido").src="Imágenes/Imagen_DAM8.PNG";
+                    break;
+                case 5:
+                    document.getElementById("imagenesContenido").src="Imágenes/Imagen_DAM9.PNG";
+                    break;
+            }
+        }
+        function inicio(){
+            setInterval(cambiaImagenes, 3000);
+            setInterval(movecube,3000);
+        }
+        window.onload = inicio;
+    </script>
     
+    <link rel="icon" href="Imágenes/icono pagina.PNG">
+        
 </head>
 <body>
     <div id="principal">           <!--CONTENEDOR PRINCIPAL-->
@@ -58,15 +86,14 @@
                     <img src="imágenes/castillo.png" alt="">
                 </div>
                 <div id="cabeceraD2">
-                    <a href="https://twitter.com/IESFernandoIII"><img id="twitter" src="imágenes/twitter.png" alt=""></a>
+                    <img id="twitter" src="imágenes/twitter.png" alt="">
                         
-                      <a href="https://www.instagram.com/iesfernandoiii_/"><img id="instagram" src="Imágenes/instagram.png" alt=""></a>
+                      <img id="instagram" src="Imágenes/instagram.png" alt="">
                         
-                    <a href="https://www.facebook.com/people/IES-Fernando-III/100057417879874/"><img id="facebook" src="imágenes/facebook.png" alt=""></a>
+                    <img id="facebook" src="imágenes/facebook.png" alt="">
                 </div>
             </div>
         </div>
-       
         <nav role="navigation" class="contenedorMenu">
             <ul>
               <li><a href="">Centro</a>
@@ -94,7 +121,7 @@
                       <li><a href="construccion.html" target="_blank">ESO</a></li>
                       <li><a href="construccion.html" target="_blank">C.F.G.M. Conformado por Modelo de Metales y Polímeros</a></li>
                       <li><a href="construccion.html" target="_blank">C.F.G.S. Programación de la Producción por Modelo en Metales</a></li>
-                      <li><a href="construccion.html" target="_blank">C.F.G.S. Mantenimiento Electrónoco</a></li>
+                      <li><a href="construccion.html" target="_blank">C.F.G.S. Mantenimiento Electrónico</a></li>
                       <li><a href="Dfm.html" target="_blank">C.F.G.S. Diseño de Fabricación Mecánica</a></li>
                       <li><a href="Dam.html" target="_blank">C.F.G.S. Desarrollo de Aplicaciones Multiplataforma</a></li>
                       <li><a href="Daw.html" target="_blank">C.F.G.S. Desarrollo de Aplicaciones Web</a></li>
@@ -151,37 +178,48 @@
               </li>
               <li class="acredita"><a href="construccion.html" target="_blank">Acredita</a></li>
             </ul>
-          </nav>
-          
+        </nav>
+
         <div id="contenedorNoticias">       
             
             <div id="noticias">   <!--NOTICIAS-->
                 <img src="imágenes/noticia1.png" name="cube" alt="">
             </div>
         </div>
-                    <!--PARTE DE NATALIA-->
-        <div id="daw">
-            
-                <div id="daw1">
-                    <img src="Imágenes/Daw2.png" alt="">
+
+        
+        <div id="DAMcontenido">
+            <div id="contenedor_imagenes">
+                <img src="Imágenes/Imagen_DAM1.PNG" id="imagenesContenido">
+            </div>
+            <div id="contenedor_texto">
+                <h3><span>HORARIO DE MAÑANA</span></h3>
+                <p><span>Ciclo consolidado donde nuestro alumnado tiene una alta inserción laboral al finalizar.</span></p>
+                <p><span>Visualiza ejemplos reales implementados en clase: </span></p>
+                <p class="lineaProyectos"><span>Prácticas y proyectos de DAM</span></p>
+                <p>Aprenderás a:
+                    <ul type="square">
+                        <li class="azul">desarrollar juegos y aplicaciones, desarrollar aplicaciones para teléfonos, PDA y otros dispositivos móviles en Android y en IOS.</li>
+                        <li class="verde">programar en lenguajes como: Java, C#, Dart para Flutter, Kotlin, Javascript, Typescript,...</li>
+                        <li class="azul">a usar Android Studio, Visual Studio Code, Sublime Text, Intellij IDEA, entre otros. Sin dejar de lado el diseño web con HTML, CSS, Angular,...</li>
+                    </ul>
+                </p>
+            </div>
+            <div id="contenedor_subimagenes">
+                <div class="img-container">
+                    <image src="Imágenes/Imagen_DAM4.PNG" class="subimagenes"></image>
                 </div>
-                <div id="textDaw1">
-                    <h2>Ciclo de nueva implantación</h2>
-                    <p>Ya puedes matricularte para el curso 2021/2022 en este ciclo de nueva implantación en nuestro centro.</p>
-                        <p><strong> HORARIO DE MAÑANA</strong></p>
+                <div class="img-container">
+                    <image src="Imágenes/Imagen_DAM5.PNG" class="subimagenes"></image>
                 </div>
-                <div id="daw2">
-                    <img src="Imágenes/Daw4.png" alt="">
-                    <img src="Imágenes/Daw.png" alt="">
+                <div class="img-container">
+                    <image src="Imágenes/Imagen_DAM6.PNG" class="subimagenes"></image>
                 </div>
-                <div id="daw3">
-                    <img src="imágenes/Daw5.png" alt="">
-                    <img src="imágenes/Daw3.png" alt="">
-                    
+                <div class="img-container">
+                    <image src="Imágenes/Imagen_DAM7.PNG" class="subimagenes"></image>
                 </div>
-            
+            </div>
         </div>
-        <hr>
 
         <div id="informacion">  <!--INFORMACIÓN-->
 			<div id="caja1">
