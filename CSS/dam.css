@@ -224,4 +224,5 @@ span{color: red; font-weight: bold;}
 .verde{color: green;}
 .subimagenes:hover{
 	cursor: pointer;
+	transform: scale(1.15); 
 }
