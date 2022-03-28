@@ -266,3 +266,19 @@ ul li ul li a {
 #molestias{
 	color: greenyellow;
 }
+#ESO h2{
+	color: red;
+}
+#ESO h3{
+	color: blue;
+}
+#ESO ul li {
+    list-style:initial;
+    margin: 0px;
+    border-left: none;
+    display:list-item;
+    padding:0px;
+    position:initial;
+	text-align: left;
+    font-family: initial;
+}

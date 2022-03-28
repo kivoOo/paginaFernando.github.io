@@ -1,0 +1,321 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="CSS/portada.css">
+    <title> IES Fernando III</title>
+    <script language="JavaScript1.1">// <![CDATA[
+        var specifyimage=new Array() //Imágenes
+        specifyimage[0]="imágenes/noticia2.png"
+        specifyimage[1]="imágenes/noticia3.png"
+        specifyimage[2]="imágenes/noticia4.png"
+        specifyimage[3]="imágenes/noticia5.png"
+        specifyimage[4]="imágenes/noticia6.png"
+        specifyimage[5]="imágenes/noticia7.png"
+        specifyimage[6]="imágenes/noticia8.png"
+        specifyimage[7]="imágenes/noticia9.png"
+        specifyimage[8]="imágenes/noticia10.png"
+        specifyimage[9]="imágenes/noticia11.png"
+        specifyimage[10]="imágenes/noticia12.png"
+        specifyimage[11]="imágenes/noticia13.png"
+        specifyimage[12]="imágenes/noticia1.png"
+        var delay=3000 //En milisegundos,1000=1segundo
+        var count =1;
+        
+        var cubeimage=new Array()
+        for (i=0;i<specifyimage.length;i++){
+        cubeimage[i]=new Image()
+        cubeimage[i].src=specifyimage[i]
+        }
+        
+        function movecube(){
+        if (window.createPopup)
+        cube.filters[0].apply()
+        document.images.cube.src=cubeimage[count].src;
+        if (window.createPopup)
+        cube.filters[0].play()
+        count++;
+        if (count==cubeimage.length)
+        count=0;
+        setTimeout("movecube()",delay)
+        }
+        
+        window.onload=new Function("setTimeout('movecube()',delay)")
+        // ]]></script>
+    
+    <link rel="icon" href="Imágenes/icono pagina.PNG">
+</head>
+<body>
+    <div id="principal">           <!--CONTENEDOR PRINCIPAL-->
+        <div id="cabecera">       <!--CABEZERA-->
+            <div id="cabeceraI">   
+               <a href="Index.html"><img src="imágenes/logoFernado.png" alt=""></a>
+            </div>
+            <div id="cabeceraD">
+                <div id="cabeceraD1">
+                    <img src="imágenes/castillo.png" alt="">
+                </div>
+                <div id="cabeceraD2">
+                    <a href="https://twitter.com/IESFernandoIII"><img id="twitter" src="imágenes/twitter.png" alt=""></a>
+                        
+                      <a href="https://www.instagram.com/iesfernandoiii_/"><img id="instagram" src="Imágenes/instagram.png" alt=""></a>
+                        
+                    <a href="https://www.facebook.com/people/IES-Fernando-III/100057417879874/"><img id="facebook" src="imágenes/facebook.png" alt=""></a>
+                </div>
+            </div>
+        </div>
+       
+        <nav role="navigation" class="contenedorMenu">
+            <ul>
+              <li><a href="">Centro</a>
+                  <ul class="medio">
+                      <li><a href="construccion.html" target="_blank">Saludo del director</a></li>
+                      <li><a href="construccion.html" target="_blank">Equipo directivo</a></li>
+                      <li><a href="construccion.html" target="_blank">Secretaria virtual</a></li>
+                      <li><a href="construccion.html" target="_blank">Consejo escolar</a></li>
+                      <li><a href="construccion.html" target="_blank">Contacto</a></li>
+                      <li><a href="construccion.html" target="_blank">Plan de centro</a></li>
+                      <li><a href="construccion.html" target="_blank">Objetivos y criterios de evaluación</a></li>
+                  </ul>
+              </li>
+              <li><a href="">Curso</a>
+                   <ul class="pequeño">
+                      <li><a href="construccion.html" target="_blank">Calendario escolar</a></li>
+                      <li><a href="construccion.html" target="_blank">Libros de texto</a></li>
+                      <li><a href="construccion.html" target="_blank">Horarios</a></li>
+                      <li><a href="construccion.html" target="_blank">Tutores</a></li>
+                      <li><a href="construccion.html" target="_blank">Normas de convivencia</a></li>
+                </ul>
+              </li>
+              <li><a href="">Oferta educativa</a>
+                  <ul class="grande">
+                      <li><a href="construccion.html" target="_blank">ESO</a></li>
+                      <li><a href="construccion.html" target="_blank">C.F.G.M. Conformado por Modelo de Metales y Polímeros</a></li>
+                      <li><a href="construccion.html" target="_blank">C.F.G.S. Programación de la Producción por Modelo en Metales</a></li>
+                      <li><a href="construccion.html" target="_blank">C.F.G.S. Mantenimiento Electrónoco</a></li>
+                      <li><a href="construccion.html" target="_blank">C.F.G.S. Diseño de Fabricación Mecánica</a></li>
+                      <li><a href="" target="_blank">C.F.G.S. Desarrollo de Aplicaciones Multiplataforma</a></li>
+                      <li><a href="Daw.html" target="_blank">C.F.G.S. Desarrollo de Aplicaciones Web</a></li>
+                      <li><a href="construccion.html" target="_blank">Curso Epecialización: Fabricación Aditiva</a></li>
+                    </ul>
+              </li>
+              <li><a href="">Premios y concursos</a>
+                  <ul class="pequeño">
+                      <li><a href="https://sites.google.com/fernando3martos.com/programaparticipa/inicio" target="_blank">Programa participa</a></li>
+                      <li><a href="construccion.html" target="_blank">Premios a la excelencia</a></li>
+                    </ul>
+              </li>
+              <li><a href="">Departamentos</a>
+                  <ul class="grande">
+                      <li><a href="https://sites.google.com/fernando3martos.com/electronica/inicio?authuser=3" target="_blank">Área de Formación Profesional</a></li>
+                      <li><a href="https://sites.google.com/fernando3martos.com/departamento-dibujo/inicio?authuser=1" target="_blank">Área Artistica</a></li>
+                      <li><a href="https://sites.google.com/fernando3martos.com/dptodetecnologia/" target="_blank">Área Cientifico - Tecnológica</a></li>
+                      <li><a href="https://web.iesfernandoiii.es/index.php/sample-sites-2/asl/lengua-castellana" target="_blank">Área Socio - Lingüistica</a></li>
+                      <li><a href="https://sites.google.com/fernando3martos.com/ies-fernando-iii-orientacion/inicio" target="_blank">Departamento de Orientación</a></li>
+                      <li><a href="https://sites.google.com/fernando3martos.com/dace/inicio" target="_blank">Departamento de Actividades Complementarias y Extraescolares</a></li>
+                    </ul>
+              </li>
+              <li><a href="">Programas y proyectos</a>
+                  <ul class="medio">
+                      <li><a href="https://sites.google.com/fernando3martos.com/programas-europeos/inicio" target="_blank">Proyecto Erasmus+</a></li>
+                      <li><a href="https://www.juntadeandalucia.es/organismos/educacionydeporte/consejeria/transparencia/planificacion-evaluacion-estadistica/planes/detalle/59469.html" target="_blank">Programa PROA</a></li>
+                      <li><a href="https://www.juntadeandalucia.es/educacion/portals/web/aldea/programa-aldea" target="_blank">Programa Aldea</a></li>
+                      <li><a href="https://sites.google.com/fernando3martos.com/programadeplurilingismo/inicio" target="_blank">Programa Bilingüismo</a></li>
+                      <li><a href="https://sites.google.com/fernando3martos.com/tde/" target="_blank">Transfomación Digital Educativa</a></li>
+                      <li><a href="https://www.juntadeandalucia.es/educacion/webportal/web/vida-saludable/programas/forma-joven" target="_blank">Programa Forma Joven</a></li>
+                      <li><a href="https://www.juntadeandalucia.es/educacion/portals/web/innicia" target="_blank">Programa Innicia</a></li>
+                      <li><a href="https://sites.google.com/view/aprendiendo-con-las-empresas/aprendiendo-con-las-empresas" target="_blank">Proyecto "Aprendiendo con las empresas"</a></li>
+                      <li><a href="https://sites.google.com/fernando3martos.com/planigualdad/inicio" target="_blank">Plan de Igualdad</a></li>
+                      <li><a href="https://colaboraeducacion30.juntadeandalucia.es/educacion/colabora/documents/14250172/28459866/Dosier+Programa+ComunicA+2020-2021/a002cb98-78e2-4de6-8223-b6ca93a228fc?version=1.0&previewFileIndex=" target="_blank">Programa ComunicA</a></li>
+                      <li><a href="https://www.juntadeandalucia.es/organismos/educacionydeporte/consejeria/transparencia/planificacion-evaluacion-estadistica/planes/detalle/60802.html" target="_blank">Proyecto Lingüistico de Centro</a></li>
+                    </ul>
+              </li>
+              <li><a href="">Moodle</a>
+                  <ul class="pequeño">
+                      <li><a href="https://educacionadistancia.juntadeandalucia.es/centros/jaen/" target="_blank">Moodle</a></li>
+                    </ul>
+              </li>
+              <li><a href="">Television IES Fernando III</a>
+                  <ul class="medio">
+                      <li><a href="construccion.html" target="_blank">Web Televisión</a></li>
+                      <li><a href="https://www.youtube.com/channel/UCNCrC7ruKZAATsiU7LZYl4A/videos" target="_blank">Canal Youtube Televisión</a></li>
+                    </ul>
+              </li>
+              <li><a href="">Enlaces de interes</a>
+                  <ul class="medio">
+                      <li><a href="https://www.juntadeandalucia.es/educacion/portals/web/ced" target="_blank">Consejería de Educación</a></li>
+                      <li><a href="https://www.ujaen.es" target="_blank">Universidad de Jaén</a></li>
+                    </ul>
+              </li>
+              <li class="acredita"><a href="construccion.html" target="_blank">Acredita</a></li>
+            </ul>
+          </nav>
+          
+        <div id="contenedorNoticias">       
+            
+            <div id="noticias">   <!--NOTICIAS-->
+                <img src="imágenes/noticia1.png" name="cube" alt="">
+            </div>
+        </div>
+                    <!--PARTE DE NATALIA-->
+        <div id="ESO">
+            <h2>Educación Secundaria Obligatoria</h2>
+            <h3>Organización de la ESO.</h3>
+            <p>La Educación Secundaria Obligatoria (ESO) es una etapa educativa obligatoria y gratuita que completa la educación básica. Consta de cuatro cursos académicos que se realizan ordinariamente entre los 12 y los 16 años de edad. No obstante, los alumnos tendrán derecho a permanecer en régimen ordinario cursando la enseñanza básica hasta los dieciocho años de edad.
+            </p>
+            <p>Se organiza de acuerdo con los principios de educación común y de atención a la diversidad y presta especial atención a la orientación educativa y profesional del alumnado.</p>
+            <p>Desde el curso 2015-2016 comprende dos ciclos; el primero de tres cursos escolares y el segundo de uno. Este último, de carácter fundamentalmente propedéutico, puede cursarse por una de las dos siguientes opciones:</p>
+        <ul>
+            <li>Opción de enseñanzas académicas para la iniciación al Bachillerato.</li>
+            <li>Opción de enseñanzas aplicadas para la iniciación a la Formación Profesional.</li>
+        </ul>
+        <p>La Educación Secundaria Obligatoria tiene como finalidad:</p>
+        <ul>
+            <li>Lograr que todos adquieran los elementos básicos de la cultura: humanísticos, artísticos, científicos y tecnológicos.</li>
+            <li>Desarrollar y consolidar hábitos de estudio y de trabajo.</li>
+            <li>Preparar para la incorporación a estudios posteriores y para su inserción laboral.</li>
+            <li>Formar a todos para el ejercicio de sus derechos y obligaciones en la vida como ciudadanos.</li>
+        </ul>
+        <p>A partir de la completa implantación de la LOMCE la superación de la evaluación final, así como una calificación final en la etapa igual o superior a 5 puntos sobre 10 conducirá a la obtención del título de Graduado en Educación Secundaria Obligatoria.</p>
+        <p>Hasta la entrada en vigor de la normativa resultante del Pacto de Estado social y político por la educación y conforme a lo dispuesto en el Real Decreto-ley 5/2016, de 9 de diciembre, de medidas urgentes para la ampliación del calendario de implantación de la Ley Orgánica 8/2013, de 9 de diciembre, para la mejora de la calidad educativa:</p>
+        <ul>
+            <li>Dicha evaluación final será considerada muestral y no tendrá efectos académicos.</li>
+            <li>Los títulos de Graduado en Educación Secundaria Obligatoria permitirán acceder indistintamente a cualquiera de las enseñanzas postobligatorias recogidas en el artículo 3.4 de la Ley Orgánica 2/2006, de 3 de mayo.</li>
+        </ul>
+        <hr>
+        <h3>Objetivos</h3>
+        <p>El Real Decreto 1105/2014, de 26 de diciembre, por el que se establece el currículo básico de la Educación Secundaria Obligatoria y del Bachillerato establece que la Educación Secundaria Obligatoria contribuirá a desarrollar en los alumnos y las alumnas las capacidades que les permitan:</p>
+        <ol>
+            <li>Asumir responsablemente sus deberes, conocer y ejercer sus derechos en el respeto a los demás, practicar la tolerancia, la cooperación y la solidaridad entre las personas y grupos, ejercitarse en el diálogo afianzando los derechos humanos y la igualdad de trato y de oportunidades entre mujeres y hombres, como valores comunes de una sociedad plural y prepararse para el ejercicio de la ciudadanía democrática.</li>
+            <li>Desarrollar y consolidar hábitos de disciplina, estudio y trabajo individual y en equipo como condición necesaria para una realización eficaz de las tareas del aprendizaje y como medio de desarrollo personal.</li>
+            <li>Valorar y respetar la diferencia de sexos y la igualdad de derechos y oportunidades entre ellos. Rechazar la discriminación de las personas por razón de sexo o por cualquier otra condición o circunstancia personal o social. Rechazar los estereotipos que supongan discriminación entre hombres y mujeres, así como cualquier manifestación de violencia contra la mujer.</li>
+            <li>Fortalecer sus capacidades afectivas en todos los ámbitos de la personalidad y en sus relaciones con los demás, así como rechazar la violencia, los prejuicios de cualquier tipo, los comportamientos sexistas y resolver pacíficamente los conflictos.</li>
+            <li>Desarrollar destrezas básicas en la utilización de las fuentes de información para, con sentido crítico, adquirir nuevos conocimientos. Adquirir una preparación básica en el campo de las tecnologías, especialmente las de la información y la comunicación.</li>
+            <li>Concebir el conocimiento científico como un saber integrado, que se estructura en distintas disciplinas, así como conocer y aplicar los métodos para identificar los problemas en los diversos campos del conocimiento y de la experiencia.</li>
+            <li>Desarrollar el espíritu emprendedor y la confianza en sí mismo, la participación, el sentido crítico, la iniciativa personal y la capacidad para aprender a aprender, planificar, tomar decisiones y asumir responsabilidades.</li>
+            <li>Comprender y expresar con corrección, oralmente y por escrito, en la lengua castellana y, si la hubiere, en la lengua cooficial de la Comunidad Autónoma, textos y mensajes complejos, e iniciarse en el conocimiento, la lectura y el estudio de la literatura.</li>
+            <li>Comprender y expresarse en una o más lenguas extranjeras de manera apropiada.</li>
+            <li>Conocer, valorar y respetar los aspectos básicos de la cultura y la historia propias y de los demás, así como el patrimonio artístico y cultural.</li>
+            <li>Conocer y aceptar el funcionamiento del propio cuerpo y el de los otros, respetar las diferencias, afianzar los hábitos de cuidado y salud corporales e incorporar la educación física y la práctica del deporte para favorecer el desarrollo personal y social. Conocer y valorar la dimensión humana de la sexualidad en toda su diversidad. Valorar críticamente los hábitos sociales relacionados con la salud, el consumo, el cuidado de los seres vivos y el medio ambiente, contribuyendo a su conservación y mejora.</li>
+            <li>Apreciar la creación artística y comprender el lenguaje de las distintas manifestaciones artísticas, utilizando diversos medios de expresión y representación.</li>
+        </ol>
+        <hr>
+        <h3>Competencias básicas</h3>
+        <p>Las orientaciones de la Unión Europea insisten en la necesidad de la adquisición de las competencias clave por parte de la ciudadanía como condición indispensable para lograr que los individuos alcancen un pleno desarrollo personal, social y profesional que se ajuste a las demandas de un mundo globalizado y haga posible el desarrollo económico, vinculado al conocimiento.</p>
+        <p>Se conceptualizan como un «saber hacer» que se aplica a una diversidad de contextos académicos, sociales y profesionales. Para que la transferencia a distintos contextos sea posible resulta indispensable una comprensión del conocimiento presente en las competencias y la vinculación de este con las habilidades prácticas o destrezas que las integran.</p>
+        <p>Las competencias del currículo serán las siguientes:</p>
+        <ol>
+            <li>Comunicación lingüística.</li>
+            <li>Competencia matemática y competencias básicas en ciencia y tecnología.</li>
+            <li>Competencia digital.</li>
+            <li>Aprender a aprender.</li>
+            <li>Competencias sociales y cívicas.</li>
+            <li>Sentido de iniciativa y espíritu emprendedor.</li>
+            <li>Conciencia y expresiones culturales.</li>
+        </ol>
+        <p>Para una adquisición eficaz de las competencias y su integración efectiva en el currículo, deberán diseñarse actividades de aprendizaje integradas que permitan al alumnado avanzar hacia los resultados de aprendizaje de más de una competencia al mismo tiempo.</p>
+        <p>Se potenciará el desarrollo de las competencias Comunicación lingüística, Competencia matemática y competencias básicas en ciencia y tecnología.</p>
+        <p>Las competencias clave deben estar integradas en las áreas o materias de las propuestas curriculares, y en ellas definirse, explicitarse y desarrollarse suficientemente los resultados de aprendizaje que los alumnos y alumnas deben conseguir.</p>
+        <p>Las competencias deben desarrollarse en los ámbitos de la educación formal, no formal e informal a lo largo de la Educación Primaria, la Educación Secundaria Obligatoria y el Bachillerato, y en la educación permanente a lo largo de toda la vida.</p>
+        <hr>
+        <h3>Estructura</h3>
+        <p>La oferta educativa en Educación Secundaria Obligatoria en nuestro centro es la siguiente:</p>
+        <h2>2º de E.S.O.</h2>
+        <ul>
+            <li>Ámbito Científico-Matemático</li>
+            <li>Ámbito Lenguas Extranjeras</li>
+            <li>Ámbito Lingüístico Social</li>
+            <li>Educación Física</li>
+            <li>Educación Plástica Visual y Audiovisual</li>
+            <li>Física y Química</li>
+            <li>Francés (Segundo Idioma)</li>
+            <li>Geografía e Historia</li>
+            <li>Inglés</li>
+            <li>Lengua Castellana y Literatura</li>
+            <li>Libre Disposición 1</li>
+            <li>Matemáticas</li>
+            <li>Materia Libre Configuración Propia 1</li>
+            <li>Música</li>
+            <li>Religión Católica</li>
+            <li>Religión Evangélica</li>
+            <li>Tecnología</li>
+            <li>Valores Éticos</li>
+            
+        </ul>
+        <h2>3ª DE E.S.O.</h2>
+        <ul>
+            <li>Biología y Geología</li>
+            <li>Cultura Clásica</li>
+            <li>Educación Física</li>
+            <li>Educación para la Ciudadanía y los Derechos Humanos</li>
+            <li>Física y Química</li>
+            <li>Francés (Segundo Idioma)</li>
+            <li>Geografía e Historia</li>
+            <li>Inglés</li>
+            <li>Lengua Castellana y Literatura</li>
+            <li>Libre Disposición 1</li>
+            <li>Matemáticas orientadas a las enseñanzas académicas</li>
+            <li>Matemáticas orientadas a las enseñanzas aplicadas</li>
+            <li>Religión Católica</li>
+            <li>Tecnología</li>
+            <li>Valores Éticos</li>
+            
+        </ul>
+        <h2>4º DE E.S.O.</h2>
+        <ul>
+            <li>Biología y Geología</li>
+            <li>Ciencias aplicadas a la actividad profesional</li>
+            <li>Cultura científica</li>
+            <li>Economía</li>
+            <li>Educación Física</li>
+            <li>Física y Química</li>
+            <li>Francés (Segundo Idioma)</li>
+            <li>Geografía e Historia</li>
+            <li>Inglés</li>
+            <li>Iniciación a la Actividad Emprendedora y Empresarial</li>
+            <li>Latín</li>
+            <li>Lengua Castellana y Literatura</li>
+            <li>Matemáticas orientadas a las enseñanzas académicas</li>
+            <li>Matemáticas orientadas a las enseñanzas aplicadas</li>
+            <li>Música</li>
+            <li>Refuerzo de materias troncales</li>
+            <li>Religión Católica</li>
+            <li>Religión Evangélica</li>
+            <li>Tecnología </li>
+            <li>Tecnología de la Información y la Comunicación</li>
+            <li>Valores Éticos</li>
+        </ul>
+        <hr>
+        <h3>Acceso</h3>
+        <p>El alumnado se incorporará a la Educación Secundaria Obligatoria, tras haber cursado la Educación primaria, en el año natural en el que cumpla los doce años de edad, salvo que hubiera permanecido en la Educación primaria un año académico más de los seis establecidos, en cuyo caso sería el año en que cumple los trece años de edad.</p>
+        <p>La incorporación a cualquiera de los cursos que integran la Educación Secundaria Obligatoria del alumnado procedente de sistemas educativos extranjeros que esté en edad de escolarización obligatoria se realizará atendiendo a sus circunstancias, conocimientos, edad e historial académico, para que pueda continuar con aprovechamiento su educación.</p>
+        <p>La escolarización del alumnado que presenta dificultades específicas de aprendizaje se regirá por los principios de normalización e inclusión y asegurará su no discriminación y la igualdad efectiva en el acceso y permanencia en el sistema educativo.</p>
+        <hr>
+        
+        </div>
+
+        <div id="informacion">  <!--INFORMACIÓN-->
+			<div id="caja1">
+                <image src="Imágenes/informacion.PNG" id="fotoInformacion"></image>
+			</div>
+		</div>
+
+        <div id="footer">   <!--FOOTER-->
+			<div id="iconos">
+                <div id="redesSociales">
+                    <a href="https://www.facebook.com/people/IES-Fernando-III/100057417879874/" target="blank"><image src="Imágenes/facebook.png" class="facebook"></image></a>
+                    <a href="https://twitter.com/IESFernandoIII" target="blank"><image src="Imágenes/twitter.png" class="twitter"></image></a>
+                    <a href="https://www.instagram.com/iesfernandoiii_/" target="blank"><image src="Imágenes/instagram.png" class="instagram"></image></a>
+                </div>
+                <p class="año">©2022</p>
+			</div>
+			<div id="volver">
+                <p class="arriba"><a href="#">Volver arriba</a></p>
+			</div>
+		</div>
+
+    </div>
+</body>
+</html>
